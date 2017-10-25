@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Utility page to check current warframe status",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -25,7 +27,7 @@
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "eslint": "^4.9.0",
-    "express": "~4.15.5",
+    "express": "~4.16.0",
     "express-handlebars": "^3.0.0",
     "jade": "~1.11.0",
     "morgan": "~1.9.0",
@@ -34,12 +36,14 @@
     "serve-favicon": "~2.4.5",
     "sinon": "^4.0.1",
     "supertest": "^3.0.0",
-    "universal-analytics": "^0.4.15"
+    "universal-analytics": "^0.4.15",
+    "snyk": "^1.45.0"
   },
   "devDependencies": {
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.4.0"
-  }
+  },
+  "snyk": true
 }
